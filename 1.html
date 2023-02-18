@@ -37,11 +37,19 @@
   <body>
     <h1>Event Seat Booking</h1>
     <form method="post">
+      <label for="booking_id">Booking_id:</label>
+      <input type="number" id="booking_id" name="booking_id" min="200" max="218" required><br><br>
+      <label for="event_id">Event_id:</label>
+      <input type="number" id="event_id" name="event_id" required><br><br>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required><br><br>
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required><br><br>
-      <label for="event">Event:</label>
+      <label for="phn_no">Phone No:</label>
+      <input type="text" id="text" name="phn_no" required><br><br>
+      <label for="event">Event:</label> 
       <select id="event" name="event" required>
         <option value="">Select an event</option>
         <option value="event1">Event 1</option>
@@ -49,7 +57,7 @@
         <option value="event3">Event 3</option>
       </select><br><br>
       <label for="seats">Number of seats:</label>
-      <input type="number" id="seats" name="seats" min="1" max="10" required><br><br>
+      <input type="number" id="seats" name="seats" min="0" max="18" required><br><br>
       <input type="submit" value="Book Seats">
     </form>
 
