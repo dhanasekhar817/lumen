@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Creation Form</title>
+    <style>
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            resize: none;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            margin-top: 50px;
+        }
+    
+    
+    </style>
+</head>
+
+<body style="background-color: aqua;">
+    
+    <div align="center">
+        <div class="container">
+    
+            <form>
+                <label for="event_name" style="font-size:20px ;">Event Name</label>
+                <input type="text" id="event_name" name="event_name" required>
+
+                <label for="event_date" style="font-size:20px ;">Event Date</label>
+                <input type="date" id="event_date" name="event_date" required>
+
+                <label for="event_time" style="font-size:20px ;">Event Time</label>
+                <input type="time" id="event_time" name="event_time" required>
+
+                <label for="event_location" style="font-size:20px ;" >Event Location</label>
+                <input type="text" id="event_location" name="event_location" required>
+
+                <label for="event_description" style="font-size:20px ;">Event Description</label>
+                <textarea id="event_description" name="event_description" rows="5" required></textarea>
+
+                <input type="submit" href=" " value="Create Event">
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>
